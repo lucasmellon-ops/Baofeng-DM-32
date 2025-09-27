@@ -1,0 +1,133 @@
+No.,Channel Name,Channel Type,RX Frequency[MHz],TX Frequency[MHz],Power,Band Width,Scan List,TX Admit,Emergency System,Squelch Level,APRS Report Type,Forbid TX,APRS Receive,Forbid Talkaround,Auto Scan,Lone Work,Emergency Indicator,Emergency ACK,Analog APRS PTT Mode,Digital APRS PTT Mode,TX Contact,RX Group List,Color Code,Time Slot,Encryption,Encryption ID,APRS Report Channel,Direct Dual Mode,Private Confirm,Short Data Confirm,DMR ID,CTC/DCS Decode,CTC/DCS Encode,Scramble,RX Squelch Mode,Signaling Type,PTT ID,VOX Function,PTT ID Display
+1,KE8IL UHF,Analog,444.80000,449.80000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,100.0,100.0,None,Carrier/CTC,None,OFF,0,0
+2,K8LOD UHF,Analog,443.45000,448.45000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,100.0,100.0,None,Carrier/CTC,None,OFF,0,0
+3,K8LOD VHF,Analog,147.27000,147.87000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,100.0,100.0,None,Carrier/CTC,None,OFF,0,0
+4,KE8IL 2M,Analog,146.97000,146.37000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,100.0,100.0,None,Carrier/CTC,None,OFF,0,0
+5,KB0P DMR U.P.TG,Digital,442.20000,447.20000,High,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+6,KB0P DMR Local,Digital,442.20000,447.20000,High,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+7,World-wide 91,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,World-wide,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+8,Europe 92,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Europe,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+9,N Ameri 93,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,North America,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+10,Asia Middle E 94,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Asia Middle East,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+11,Aust New Ze 95,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Australia New Ze,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+12,Radio Test 98,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Radio Test,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+13,Diethnes Ell 202,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Diethnes Ellada,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+14,Nederland 204,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Nederland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+15,Belgium 206,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Belgium,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+16,France 208,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,France,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+17,Andorra 213,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Andorra,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+18,Spain 214,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Spain,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+19,Hungary 216,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Hungary,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+20,Bosnia & Her 218,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Bosnia and Herze,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+21,Croatia 219,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Croatia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+22,Serbia 220,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Serbia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+23,Italia 222,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Italia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+24,Romania 226,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Romania,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+25,Switzerland 228,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Switzerland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+26,Czech Rep 230,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Czech Republic,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+27,Slovak 231,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Slovak,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+28,Austria 232,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Austria,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+29,UK Call - QS 235,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,UK Call - QSY to,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+30,Denmark 238,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Denmark,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+31,Sweden 240,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Sweden,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+32,Norway 242,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Norway,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+33,Finland 244,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Finland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+34,Lithuania 246,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Lithuania,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+35,Latvia 247,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Latvia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+36,Estonia 248,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Estonia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+37,Ukraine 255,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Ukraine,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+38,Moldova 259,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Moldova,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+39,Poland 260,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Poland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+40,Deutschland 262,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Deutschland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+41,MultiMode DL 263,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,MultiMode DL,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+42,DL OPS 264,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,DL OPS,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+43,265 265,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,265,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+44,Portugal 268,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Portugal,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+45,Luxembourg 270,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Luxembourg,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+46,Ireland 272,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Ireland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+47,Iceland 274,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Iceland,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+48,Albania 276,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Albania,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+49,Malta 278,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Malta,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+50,Cyprus 280,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Cyprus,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+51,Georgia 282,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Georgia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+52,Armenia 283,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Armenia,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+53,Bulgaria 284,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Bulgaria,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+54,Turkiye 286,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Turkiye,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+55,Faroe Island 288,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,Faroe Islands,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+56,San Marino 292,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,San Marino,None,1,Slot 2,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+57,GMRS/FRS 01,Analog,462.56250,462.56250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+58,GMRS/FRS 02,Analog,462.58750,462.58750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+59,GMRS/FRS 03,Analog,462.61250,462.61250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+60,GMRS/FRS 04,Analog,462.63750,462.63750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+61,GMRS/FRS 05,Analog,462.66250,462.66250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+62,GMRS/FRS 06,Analog,462.68750,462.68750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+63,GMRS/FRS 07,Analog,462.71250,462.71250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+64,GMRS/FRS 08,Analog,467.56250,467.56250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+65,GMRS/FRS 09,Analog,467.58750,467.58750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+66,GMRS/FRS 10,Analog,467.61250,467.61250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+67,GMRS/FRS 11,Analog,467.63750,467.63750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+68,GMRS/FRS 12,Analog,467.66250,467.66250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+69,GMRS/FRS 13,Analog,467.68750,467.68750,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+70,GMRS/FRS 14,Analog,467.71250,467.71250,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+71,GMRS/FRS 15,Analog,462.55000,462.55000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+72,GMRS/FRS 16,Analog,462.57500,462.57500,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+73,GMRS/FRS 17,Analog,462.60000,462.60000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+74,GMRS/FRS 18,Analog,462.62500,462.62500,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+75,GMRS/FRS 19,Analog,462.65000,462.65000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+76,GMRS/FRS 20,Analog,462.67500,462.67500,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+77,GMRS/FRS 21,Analog,462.70000,462.70000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+78,GMRS/FRS 22,Analog,462.72500,462.72500,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+79,Air 121.5 Emerge,Analog,121.50000,121.50000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+80,Air 122.75 Air-t,Analog,122.75000,122.75000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+81,Air 122.8 Unicom,Analog,122.80000,122.80000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+82,Air 123.0 Unicom,Analog,123.00000,123.00000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+83,Air 123.025 Heli,Analog,123.02500,123.02500,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+84,Air 123.45 Air-t,Analog,123.45000,123.45000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,KE8MZT USA ,None,None,None,Carrier/CTC,None,OFF,0,0
+85,Air 123.1 SAR,Analog,123.10000,123.10000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+86,Marine Ch16 Dist,Analog,156.80000,156.80000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+87,Marine Ch13 Nav,Analog,156.65000,156.65000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+88,Marine Ch09 Call,Analog,156.45000,156.45000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+89,Marine Ch22A USC,Analog,157.10000,157.10000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+90,2m Calling,Analog,146.52000,146.52000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+91,70cm Calling,Analog,446.00000,446.00000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+92,1.25m Calling,Analog,223.50000,223.50000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+93,6m Calling,Analog,50.12500,50.12500,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+94,10m FM Calling,Analog,29.60000,29.60000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+95,NOAA WX 1,Analog,162.40000,162.40000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+96,NOAA WX 2,Analog,162.42500,162.42500,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+97,NOAA WX 3,Analog,162.45000,162.45000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+98,NOAA WX 4,Analog,162.47500,162.47500,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+99,NOAA WX 5,Analog,162.50000,162.50000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+100,NOAA WX 6,Analog,162.52500,162.52500,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+101,NOAA WX 7,Analog,162.55000,162.55000,High,25KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+102,MURS 1,Analog,151.82000,151.82000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+103,MURS 2,Analog,151.88000,151.88000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+104,MURS 3,Analog,151.94000,151.94000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+105,MURS 4,Analog,154.57000,154.57000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+106,MURS 5,Analog,154.60000,154.60000,High,12.5KHz,None,Allow TX,None,3,Off,0,0,0,0,0,0,0,0,0,None,None,0,Slot 1,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+107,Worldwide 91,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+108,N Ameri 93,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+109,USA Bridge 3100,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+110,Amer Link 31656,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+111,SkyHub Li 310847,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+112,Midwest Reg 3169,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+113,Northeast R 3172,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+114,MidAtlantic 3173,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+115,TX-OK Regio 3175,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+116,Southwest R 3176,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+117,Mountain Re 3177,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+118,First Coas 31121,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+119,TAC 310 310,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+120,TAC 311 311,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+121,TAC 312 312,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+122,TAC 313 313,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+123,TAC 314 314,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+124,TAC 315 315,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+125,TAC 316 316,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+126,TAC 317 317,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+127,TAC 318 318,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+128,TAC 319 319,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+129,JOTA 907,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+130,POTA 3181,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+131,SOTA 973,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
+132,Parrot 9990,Digital,430.00000,430.00000,Middle,12.5KHz,None,Always,None,3,Digital,0,1,0,0,0,0,0,0,0,None,None,1,Slot 2,0,None,1,0,0,0,yÞ,None,None,None,Carrier/CTC,None,OFF,0,0
