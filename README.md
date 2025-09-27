@@ -1,164 +1,164 @@
 
-# DM‑32 Talkgroup & Channel Generator (Windows Edition)
+# DM‑32 Code‑Plug Builder – Beginner‑Friendly Guide
 
 
-This guide walks you through converting a BrandMeister talkgroup list into a
-codeplug for the Baofeng **DM‑32** handheld radio using a Windows PC. It is
-written for beginners who may have never opened the command prompt. Follow
-each step carefully and you’ll be able to generate and import your own
-channels and zones in a few minutes.
+Welcome! This repository helps owners of the Baofeng DM‑32 digital mobile radio to build a complete code‑plug – that’s the set of channels and zones you load into your radio so it knows who to talk to. This guide assumes you’ve never used Python or the Windows command line before. Follow the steps below carefully, and you’ll end up with two CSV files (*_Channels.csv and *_Zones.csv) that you can import directly into the Baofeng CPS (Customer Programming Software).
 
 
-## 🛠️ What you need
+## 🛠️ What’s in this repository?
 
+| Folder/file                       | What it does                                                                                                                                                                                           | Needed for you?                                      |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| `format_talkgroups_to_dm32.py`    | Converts a BrandMeister talkgroup export to a clean DM‑32 CSV format.                                                                                                                                  | Yes, if you have a talkgroup list from BrandMeister. |
+| `generate_dm32_channels_zones.py` | A Python script with helper functions for channel/zone generation (used by the interactive builder).                                                                                                   | No direct use, the builder calls it.                 |
+| `interactive_dm32_builder.py`     | **The main script**.  It asks you for your local frequencies, the number of talkgroups you want, which kinds of channels to include (FRS/GMRS, air band, etc.), and then creates your code‑plug files. | Yes, you’ll run this.                                |
+| `run_dm32_interactive.bat`        | A Windows batch file that runs the interactive builder and installs any missing Python libraries.                                                                                                      | Yes, if you’re on Windows.                           |
 
-* A Windows computer with an internet connection.
-* Your BrandMeister talkgroup export in CSV format, converted to
-`DM32_formatted_ascii.csv` using the provided Python script
-`format_talkgroups_to_dm32.py`. The one included is from 9/26/2025
-* The generator script: `generate_dm32_channels_zones.py`.
-* (Optional) The batch file `run_dm32.bat` for one‑click operation.
 
 
-If you don’t yet have a talkgroup CSV, see the **Talkgroup export** section
-below.
+You may also see DM32_formatted_ascii.csv or similar files – this is from [BM talkgroups](https://brandmeister.network/?page=talkgroups) with 1690 TGs formatted to be compliant with the CPS DMR V1.41 software 
 
 
-## 📦 Step 1: Gather your files
+## Step‑by‑step for complete beginners
+### 1. Install Python (if you don’t already have it)
 
+Go to python.org/downloads
+.
 
-1. Create a folder on your computer (for example on your **Desktop**) and
-copy these files into it:
-- `generate_dm32_channels_zones.py` – the Python generator script.
-- `DM32_formatted_ascii.csv` – your talkgroup list in the DM‑32 format.
-- `run_dm32.bat` – a batch file that runs the generator with safe defaults.
-2. If any of these files are missing, download them from this repository.
+Click [Download Python 3.x.x](https://www.python.org/downloads/windows/) (any 3.9 or newer version is fine) and run the installer.
 
+Important: During installation, check the box that says “Add Python to PATH.” This makes the python and pip commands work at the command prompt.
 
-## 🐍 Step 2: Install Python
+Click through the installer until it finishes.
 
+### 2. Download your BrandMeister talkgroup list (optional but recommended)
 
-The script requires Python 3. If Python isn’t already installed on your
-computer:
+If you want BrandMeister talkgroups, log in to the BrandMeister website and export your talkgroup list to CSV. Name the file something like `BrandMeister_TGs.csv` and save it in the same folder you’re using for this project (for example, C:\Users\YourName\Desktop\DM32).
 
+### 3. Prepare your talkgroup file
 
-1. Open your web browser and visit [python.org](https://www.python.org/).
-2. Click **Downloads** and choose the latest **Python 3** installer for
-Windows.
-3. Run the installer. On the first screen **check the box labeled
-“Add Python to PATH”**, then click **Install Now** and follow the
-prompts. When the installer finishes, close the window.
+- Open a Command Prompt:
 
+- Press the Windows key on your keyboard.
 
-## 📦 Step 3: Install the required libraries
+- Type cmd and press Enter. A black window will appear.
 
+- Use the cd command to go to the folder where your files are. For example:
 
-The generator uses two small helper libraries, `pandas` and `unidecode`. If
-you use the batch file, it will install them for you automatically. If you
-prefer to install them manually:
+`cd %USERPROFILE%\Desktop\DM32`
 
+- Run the formatter script to clean your BrandMeister CSV. Replace the file name with the actual name of your export:
 
-1. Press **Win + R**, type `cmd` and press **Enter**. This opens the
-Command Prompt.
-2. In the black window, type the following and press **Enter**:
+      python format_talkgroups_to_dm32.py -i "BrandMeister_TGs.csv" -o "DM32_formatted_ascii.csv" --max-length 16
 
 
-```
-pip install pandas unidecode
-```
+This step reads your BrandMeister talkgroups and makes sure all names are plain English characters, short enough for the DM‑32, with the right commas and line endings.
 
+*Note: If you don’t have a BrandMeister file, skip this step. The interactive builder will still work and let you build channels for repeaters, hotspots, GMRS, etc.*
 
-3. Wait until the installation completes. You can close the window or leave
-it open for the next step.
+## 4. Run the interactive builder (the easiest way)
 
+- The batch file **`run_dm32_interactive.bat`** does three things: installs necessary Python libraries, launches the interactive script, and pauses when done so you can read the messages.
 
-## ▶️ Step 4: Run the script (easy method)
+- Make sure the following files are all together in one folder:
 
+  <pre>interactive_dm32_builder.py (the main script)
 
-For most users the easiest way to run the generator is to double‑click the
-batch file provided in this repo:
+  generate_dm32_channels_zones.py (helper functions)
 
+  DM32_formatted_ascii.csv (only if you did step 3)
 
-1. In the folder you created in **Step 1**, locate `run_dm32.bat`.
-2. Double‑click it. A Command Prompt window will open and automatically:
-- Install `pandas` and `unidecode` (if they aren’t already installed).
-- Run `generate_dm32_channels_zones.py` with a safe default of **100
-talkgroups** and your DMR ID (you can edit these values in the
-batch file).
-3. When the script finishes, the window will say **“Press any key to
-continue…”**. After you press a key, two new files will appear in
-the folder:
-- `DM_32_Custom_Channels.csv`
-- `DM_32_Custom_Zones.csv`
+  run_dm32_interactive.bat (the batch file)</pre>
 
+- In the Command Prompt (you should already be in the right folder), run:
 
-You’re now ready to import these files into the DM‑32 CPS.
+      run_dm32_interactive.bat
 
 
-### 🎛️ Customising the batch file
+The first time you run it, it may say “Installing required Python libraries...” and take a minute. That’s normal.
 
+You’ll then see a welcome banner:
 
-Open `run_dm32.bat` in **Notepad** to change two settings:
+# DM‑32 Interactive Code‑Plug Builder
+========================================
 
 
-* **Talkgroup count** – Adjust the number after `--pi-star-count` to reduce
-the number of talkgroups in your Pi‑Star zone. Limiting the count can
-prevent the radio from freezing if too many contacts are loaded. The
-DM‑32 supports up to **50 000 digital contacts**【528264452442009†L39-L43】, but
-some users report freezing if the list is too large【528264452442009†L170-L173】.
-* **DMR ID / Callsign** – Replace `1234567` with your own DMR ID and callsign.
+**Follow the prompts carefully. Here’s what you’ll be asked:**
 
+1. Path to DM‑32 formatted talkgroups CSV – press Enter to use DM32_formatted_ascii.csv if you created it, or type the full path to your talkgroup file. If you don’t have a talkgroup file, just press Enter.
 
-Save the file after editing and double‑click it again to generate a new
-codeplug.
+2. How many talkgroups to include – the default is 50. Enter a smaller number to keep your radio’s contact list manageable; larger values may cause the radio to freeze
+miklor.com
+.
 
+3. Your DMR ID / callsign string – this appears in the CSV header and is optional. Enter your DMR ID, or leave the default and edit later in the CPS.
 
-## 🔄 Step 5: Import into the DM‑32 CPS
+4. Name of your talkgroup zone – choose a name (e.g. “Hotspot” or “Repeater”). This becomes the zone label in the radio menu.
 
+5. Is this talkgroup zone for a hotspot? – if yes, the default power level is Low. If you’re programming a repeater zone, choose no.
 
-1. Launch the **Baofeng DM‑32 CPS** on your computer.
-2. Go to **File → Open**, choose `DM_32_Custom_Channels.csv` and click
-**Open**. This loads your channels.
-3. Go to the **Zone Management** section and import
-`DM_32_Custom_Zones.csv`.
-4. Finally, write the new codeplug to your radio using **Program → Write
-to Radio**. Follow any prompts to complete the upload.
+6. Power level for talkgroup channels – choose High, Middle or Low. Hotspots are usually Low.
 
+7. Talkgroup receive/transmit frequency – type in your hotspot or simplex frequency (e.g. 430.1000). If you’re unsure, leave the default 430.0000 MHz.
 
-## 📝 Talkgroup export (optional)
+8. Talkgroup colour code – for DMR hotspots, this is usually 1. Enter your repeater’s colour code if different.
 
+9. Talkgroup time slot – most hotspots use slot 2. Enter 1 or 2.
 
-If you haven’t yet created a `DM32_formatted_ascii.csv` file, you can
-convert a BrandMeister talkgroup export using the `format_talkgroups_to_dm32.py`
-script provided in this repo:
+10. For each category you’ll see “Include GMRS/FRS simplex channels? (Y/n)” and similar prompts for MURS, airband, marine VHF, ham simplex calling, and NOAA weather. Press Enter to say yes or type n to skip a category.
 
+11. You can then add analog repeaters (name, RX/TX frequency and CTCSS tone) and an optional DMR repeater or hotspot (name, RX/TX frequency, colour code and talkgroups on TS 1 and TS 2). To stop adding repeaters, press Enter at the “Enter repeater name” prompt.
 
-```bat
-python format_talkgroups_to_dm32.py -i "Talkgroups BrandMeister.csv" -o "DM32_formatted_ascii.csv" --max-length 16
-```
+**When the script finishes, it will say something like:**
 
+<pre>Generation complete.  Wrote 182 channels to DM_32_Custom_Channels.csv and 9 zones to DM_32_Custom_Zones.csv.
+You can now import these files into the DM‑32 CPS.</pre>
 
-This command takes your raw BrandMeister CSV, cleans it up and trims
-talkgroup names to 16 characters.
+### 5. Importing into the Baofeng CPS
 
+1. Open the Baofeng DM‑32 CPS on your computer.
 
-## ⚠️ Reducing the contact list size
+2. Connect your radio with its programming cable and turn it on.
 
+3. Device Manager → `Ports (COM & LPT) → Look for USB-SERIAL CH*** (COM*) 
 
-The DM‑32’s firmware and software are limited to **50 000 digital
-contacts**【528264452442009†L39-L43】 and the software cannot load more than
-50 K records【528264452442009†L170-L173】. If your radio freezes when you open
-the contacts menu, reduce the number of talkgroups you include. You can do
-this by lowering the value of `--pi-star-count` in the batch file. The
-script always adds a small **Popular TGs** zone with widely used talkgroups
-like Worldwide 91, North America 93 and USA Bridge 3100【177991216181320†L19-L45】,
-so you still have quick access to these even if you reduce the main list.
+*Note: You can unplug and reconnect the radio and watch for what COM Port comes and goes*
 
+4. In CPS go to Setting → COM Setting → COM Type: `COM` COM: `see step 3` Baudrate: `115200` → OK
 
----
+5. In CPS Read Data `Ctrl + R` or Program(P) → Read Data
 
+*Note: I might be superstitious or in an old way of thinking, but it is alway best practice to read from the radio first then back it up. You now have a base to edit from.*
 
-If you get stuck, ask a friend who is comfortable with installing software
-to give you a hand. Once everything is set up, you’ll be able to
-regenerate your codeplug simply by double‑clicking the batch file.
-chatgpt-agent %
+6. In CPS import in order. DMR Radio → Public → TG, Channel, Zone → There is `Import` on the bottom of the page
+  <pre>Talk Groups `DM32_formatted_ascii.csv`
+Channel `****_Channels.csv`
+Zone `****_Zones.csv`
+</pre>
+
+7. In CPS Read Data `Ctrl + W` or Program(P) → Write Data
+
+**Again read the radio first to back up its existing code‑plug before writing a new one.**
+
+Frequently asked questions
+
+
+What’s a colour code? On DMR, a colour code is like a “sub‑channel.” Most hotspots use colour code 1. Your repeater’s colour code may be different—check with the repeater owner.
+
+Why do I need Python? These scripts are written in Python, so they need the Python interpreter to run. Once installed, you don’t need to touch Python again.
+
+Where can I find more talkgroups or frequencies? The scripts include common aviation frequencies
+fly-ul.com
+, marine channels
+navcen.uscg.gov
+, ham calling frequencies, weather channels, and a curated list of popular BrandMeister talkgroups
+kf5iw.com
+. If you need other channels, feel free to modify the scripts or add them manually in the CPS.
+
+Contributing & support
+
+If you discover a better way to program the DM‑32, have corrections, ideas for improvements, more features, or want to share your own code‑plug, please open an issue or pull request on GitHub. Contributors of all skill levels are welcome!
+
+For troubleshooting or help with the scripts, open an issue on the repository. Provide details about your operating system, Python version, and any error messages you see.
+
+Thank you for using this project. We hope it saves you time and helps you get on the air quickly!
