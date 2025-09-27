@@ -15,7 +15,7 @@ channels and zones in a few minutes.
 * A Windows computer with an internet connection.
 * Your BrandMeister talkgroup export in CSV format, converted to
 `DM32_formatted_ascii.csv` using the provided Python script
-`format_talkgroups_to_dm32.py`.
+`format_talkgroups_to_dm32.py`. The one included is from 9/26/2025
 * The generator script: `generate_dm32_channels_zones.py`.
 * (Optional) The batch file `run_dm32.bat` for one‑click operation.
 
